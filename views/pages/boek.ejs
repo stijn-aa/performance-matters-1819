@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <title>OBA</title>
+</head>
+
+<body>
+  <div class="bgBar"></div>
+  <div class="panel">
+    <% include ../partials/sidemenu %>
+
+
+    <div class="content">
+      <div class="root">
+        <div class="container">
+          <article detail="article">
+            <h1 class='detailTitel'><%= book.titel %></h1>
+            <img class="detailImg" src=<%= book.imgLink %>>
+            <p class="summery"><%= book.summery %></p>
+            <p class="auteur"><%= book.auteur %></p>
+
+            <div class="link">
+              <a href='https://boekdeelfeature.netlify.com/#add/<%= book.id %>'>https://boekdeelfeature.netlify.com/#add/<%= book.id %></a>
+              <p>Deel dit boek</p>
+            </div>
+
+          </article>
+          
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <div class="popup"></div>
+  <script src="../../js/app.js" type="module"></script>
+
+</body>
+
+</html>
