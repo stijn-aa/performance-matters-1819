@@ -10,6 +10,11 @@ server side <i>with express comperssion and css-min</i>
 - Estimated Input Latency 370 ms
 - Eliminate render-blocking resources 0.16 s
 
+Volgende stap zal zijn om caching toe te voegen en een skeleton pre-render. 
+
+
+
+
 
 
 
