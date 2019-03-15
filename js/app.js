@@ -2,9 +2,10 @@ const express = require('express')
 const app = express()
 const fetch = require('node-fetch')
 const compression = require('compression')
-
+var minify = require('express-minify');
 
 app.use(compression())
+app.use(minify());
 
 app.set('view engine', 'ejs');
 
