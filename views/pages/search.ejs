@@ -10,35 +10,29 @@
 
 <body>
   <div class="bgBar"></div>
-  <div class="panel">
+  <main class="panel">
     <% include ../partials/sidemenu %>
 
 
-    <div class="content">
-      <div class="root">
-        <div class="container">
-          <h1>Search</h1>
+    <section class="content">
+      <h1>Search</h1>
 
-          <% data.forEach(function(book) { %>
-            <article>
-          <img src=<%= book.imgLink %>>
-          <a href="./boek/<%=book.id %>"   
-          <h1 class="bookTitel id<%=book.id %>"</h1>
-             <%= book.titel %>
-          </h1> </a>
-          </article>
-          <% }); %>
-
-        </div>
-      </div>
-    </div>
+      <% data.forEach(function(book) { %>
+        <article>
+      <img  src=<%= book.imgLink %>>
+      <a href="./boek/<%=book.id %>"   
+      <h2 class="bookTitel id<%=book.id %>"</h2>
+          <%= book.titel %>
+       </a>
+      </article>
+      <% }); %>
+    </section>
 
 
 
-  </div>
-  <div class="popup"></div>
-  <script src="../../js/app.js" type="module"></script>
-
+  </main>
+  
+  <script src="/js/oba.js"></script>
 </body>
 
 </html>

@@ -1,15 +1,13 @@
 const express = require('express')
 const app = express()
 const fetch = require('node-fetch')
-const compression = require('compression')
-var minify = require('express-minify');
 
-app.use(compression())
-app.use(minify());
+
 
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'))
+
 
 app.get('/', function (req, res) {
     res.render('pages/index');
@@ -27,14 +25,20 @@ app.get('/collection', function (req, res) {
 });
 
 app.get('/search', function (req, res) {
-    const data = storage.data
-    console.log(data);
-    router.searchResults();
-
-    res.render('pages/search', {
-        data
+    router.searchResults().then(data => {
+        res.render('pages/search', {
+            data
+        });
     });
 
+
+    
+
+
+});
+app.get('/offline', function (req, res) {
+    res.render('pages/offline');
+    
 
 });
 
@@ -75,10 +79,11 @@ const router = {
 
         console.log(this.constructor.URL)
 
-        fetch(this.constructor.URL)
+       return fetch(this.constructor.URL)
             .then(body => body.json())
             .then(data => storage.data = data)
             .catch(error => console.log(error))
+
 
     }
 }

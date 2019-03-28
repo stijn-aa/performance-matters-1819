@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minifyCSS": "gulp minifyCSS"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,13 @@
     "node-fetch": "^2.3.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-uglify": "^3.0.2",
     "nodemon": "^1.18.10",
     "npx": "^10.2.0"
   }

@@ -10,15 +10,13 @@
 
 <body>
   <div class="bgBar"></div>
-  <div class="panel">
+  <main class="panel">
     <% include ../partials/sidemenu %>
 
 
-    <div class="content">
-      <div class="root">
-        <div class="container">
+    <section class="content">
           <article detail="article">
-            <h1 class='detailTitel'><%= book.titel %></h1>
+            <h2 class='detailTitel'><%= book.titel %></h2>
             <img class="detailImg" src=<%= book.imgLink %>>
             <p class="summery"><%= book.summery %></p>
             <p class="auteur"><%= book.auteur %></p>
@@ -29,18 +27,14 @@
             </div>
 
           </article>
-          
-
-        </div>
-      </div>
-    </div>
+    </section>
 
 
 
-  </div>
+  </main>
   <div class="popup"></div>
-  <script src="../../js/app.js" type="module"></script>
 
+  <script src="/js/oba.js"></script>
 </body>
 
 </html>
