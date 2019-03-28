@@ -35,15 +35,14 @@ _0 optimalisatie_
 ![img](/docs/3.png)
  
 
-Audit Performance_Fast 3g trottle, mobile_
-
-First Contentful Paint: 1.4 s 
-Speed Index: 1.5 s 
-Time to Interactive: 2.0 s
-
-First Meaningful Paint: 1.5 s
-First CPU Idle: 2.0 s
-Estimated Input Latency: 170 ms
+|   | Audit Performance_Fast 3g trottle, mobile_ |   |
+| --- | --- | --- |
+|   | **Metrics** |   |
+| First Contentful Paint | Speed Index | Time to Interactive |
+| 1.4 s | 1.5 s | 2.0 s |
+|   |   |   |
+| First Meaningful Paint | First CPU Idle | Estimated Input Latency |
+| 1.5 s | 2.0 s | 170 ms |
 
 
 
@@ -72,15 +71,14 @@ _0 optimalisatie_
 ![img](/docs/6.png)
 
 
-Audit Performance_Fast 3g trottle, mobile_ 
-
-First Contentful Paint: 1.1 s 
-Speed Index: 1.3 s
-Time to Interactive: 1.7 s
-
-First Meaningful Paint: 1.1 s 
-First CPU Idle: 1.7 s
-Estimated Input Latency: 160 ms 
+|   | Audit Performance_Fast 3g trottle, mobile_ |   |
+| --- | --- | --- |
+|   | **Metrics** |   |
+| First Contentful Paint | Speed Index | Time to Interactive |
+| 1.1 s | 1.3 s | 1.7 s |
+|   |   |   |
+| First Meaningful Paint | First CPU Idle | Estimated Input Latency |
+| 1.1 s | 1.7 s | 160 ms |
 
 **Conclusie**
 
@@ -105,15 +103,13 @@ _Css minified: 204ms > 146ms_
 ![img](/docs/9.png)
 
 
-Audit Performance_Fast 3g trottle, mobile_ 
-
-First Contentful Paint: 1.1 s 
-Speed Index: 1.3 s
-Time to Interactive: 1.7 s
-
-First Meaningful Paint: 1.1 s 
-First CPU Idle: 1.6 s
-Estimated Input Latency: 150 ms 
-
+|   | Audit Performance_Fast 3g trottle, mobile_ |   |
+| --- | --- | --- |
+|   | **Metrics** |   |
+| First Contentful Paint | Speed Index | Time to Interactive |
+| 1.1 s | 1.3 s | 1.7 s |
+|   |   |   |
+| First Meaningful Paint | First CPU Idle | Estimated Input Latency |
+| 1.1 s | 1.6s | 150 ms |
 
 
