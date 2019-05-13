@@ -1,6 +1,6 @@
 # OBA in Node
 
-live demo: https://oba-node.herokuapp.com/
+live demo: https://oba-v2.herokuapp.com
 
 Doel van dit blok is om de oba app te laten runnen op een server, hem te optimaliseren en een betekenisvolle offline ervaring toe te voegen.
 
