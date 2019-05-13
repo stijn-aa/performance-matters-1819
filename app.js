@@ -92,5 +92,7 @@ const router = {
 
 
 
-app.listen(8080);
-console.log('8080 is the magic port');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+	console.log(`Our app is running on port ${ PORT }`);
+})
